@@ -117,10 +117,6 @@ $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <div>
                         <span><?php echo htmlspecialchars($row["title"]); ?></span>
 
-                        <!-- edit button -->
-                        <!-- <button>
-                            <a href="?edit_id=<?php echo $row["id"]; ?>">Edit</a>
-                        </button> -->
                         <form method="post" style="display: inline;">
                             <input type="hidden" name="action" value="edit">
                             <input type="hidden" name="edit_id" value="<?php echo $row["id"]; ?>">
